@@ -3,8 +3,6 @@ using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
-using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives;
-using UnityEngine.UIElements;
 
 namespace UnityEngine.XR.Content.Interaction
 {
@@ -407,6 +405,8 @@ namespace UnityEngine.XR.Content.Interaction
 
             var circleX = transform.right;
             var circleY = transform.forward;
+            //var circleX = transform.up;
+            //var circleY = transform.right;
 
             Gizmos.color = Color.green;
             var segmentCounter = 0;
