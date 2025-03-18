@@ -344,7 +344,6 @@ namespace UnityEngine.XR.Content.Interaction
 
             if (m_Handle != null)
             {
-                //m_Handle.localEulerAngles = new Vector3(0.0f, angle, 0.0f);
                 m_Handle.localEulerAngles = rotationAxis * angle;
             }
         }
@@ -405,8 +404,6 @@ namespace UnityEngine.XR.Content.Interaction
 
             var circleX = transform.right;
             var circleY = transform.forward;
-            //var circleX = transform.up;
-            //var circleY = transform.right;
 
             Gizmos.color = Color.green;
             var segmentCounter = 0;
